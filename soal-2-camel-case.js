@@ -2,8 +2,8 @@ function camelcase(str) {
   // kata awal ada 1
   let count = 1;
 
-  //  Looping untuk ngecek string
-  for (let i = 0; i < str.length; i++) {
+  //  Looping untuk ngecek string, kecuali looping pertama
+  for (let i = 1; i < str.length; i++) {
 
     // cek berapa ada huruf besar diawal kata
     if (str[i] === str[i].toUpperCase()) {
